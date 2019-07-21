@@ -1,0 +1,10 @@
+set +h
+umask 022
+LC_ALL=POSIX
+PATH=/bin:/sbin:/usr/bin:/usr/sbin
+export LC_ALL PATH
+
+export LS_OPTIONS='--color=auto'
+eval "$(dircolors -b)"
+alias ls='ls $LS_OPTIONS'
+
